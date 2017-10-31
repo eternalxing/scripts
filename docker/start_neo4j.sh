@@ -5,5 +5,6 @@ docker service create \
 --name neo4j \
 --network swarm-net \
 --publish 7474:7474 \
+--publish 7687:7687 \
 --mount type=bind,source=/mnt/data/neo4j,target=/data \
 neo4j
